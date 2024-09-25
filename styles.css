@@ -1,0 +1,12 @@
+body {
+    background-color: rgba(12, 7, 78, 0.945);
+    margin: 0px;
+    background-image: url(banner2.jpg);
+    background-size: cover;
+}
+header {
+    background-color: rgb(240, 133, 12);
+}
+.logo {
+    width: 82px;
+}
