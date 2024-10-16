@@ -57,8 +57,12 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1000px;
-    margin-left: auto;
+    /*margin-left: auto;
     margin-right: auto;
+    margin-top:2em;
+    margin-bottom: 2em;*/
+    /*margin: 2em auto 2em auto;*/
+    margin: 2em auto;
     gap: 20px;
 }
 
@@ -71,3 +75,21 @@ header {
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+.social a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.copyright  {
+    margin: 0px;
+    color: white;
+}
+
