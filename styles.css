@@ -23,15 +23,21 @@ header {
 }
 .main-navegation{
     /*background-color: orangered;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
 }
 .main-navegation a{
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
-    display: inline-block;
+    /*display: inline-block;*/
     padding: 15px;
 }
 .main-navegation a:hover{
-    background-color: brown;color: black;
+    background-color: brown;
+    color: black;
 }
 .banner{
     min-height: 30vh;
@@ -93,3 +99,31 @@ header {
     color: white;
 }
 
+.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 178%;
+    background-color: black;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.dropdown-menu a{
+    white-space: nowrap;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown:hover>.dropdown-menu{
+    max-height: 50vh;   
+}
+
+.dropdown > a::after{
+    content: "\25bc";
+    margin-left: 1em;
+    font-size: 0.5em;
+} 
